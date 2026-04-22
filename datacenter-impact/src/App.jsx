@@ -174,19 +174,19 @@ export default function App() {
             </div>
 
             <div className="flex flex-col flex-1 min-h-0 gap-8">
-              <div className="flex gap-12 flex-1 min-h-0">
-                <div className="flex-1 border-t-2 border-stone-900 pt-6 flex flex-col">
-                  <div className="text-[#dc2626] mb-4">
-                    <Zap className="w-10 h-10" />
+              <div className="flex gap-12 flex-1 min-h-0 overflow-hidden">
+                <div className="flex-1 border-t-2 border-stone-900 pt-4 flex flex-col">
+                  <div className="text-[#dc2626] mb-2">
+                    <Zap className="w-8 h-8" />
                   </div>
-                  <h3 className="text-3xl font-bold text-stone-900 tracking-tight mb-3 shrink-0">
+                  <h3 className="text-2xl font-bold text-stone-900 tracking-tight mb-2 shrink-0">
                     183 TWh per Tahun
                   </h3>
-                  <p className="text-stone-600 text-lg font-light leading-relaxed mb-4">
+                  <p className="text-stone-600 text-base font-light leading-relaxed mb-3">
                     Pada 2024, pusat data AS mengonsumsi 183 TWh listrik — lebih dari 4% total nasional. Diproyeksikan hingga 580 TWh pada 2030.
                   </p>
-                  <div className="flex-1 bg-stone-900 p-6 flex flex-col justify-end">
-                    <div className="flex items-end gap-6" style={{ height: 150 }}>
+                  <div className="flex-1 bg-stone-900 p-4 flex flex-col justify-end">
+                    <div className="flex items-end gap-6" style={{ height: 110 }}>
                       {[
                         { year: '2020', h: 17, projected: false, label: '~100' },
                         { year: '2024', h: 32, projected: false, label: '183' },
@@ -210,14 +210,14 @@ export default function App() {
                     <div className="text-stone-500 font-mono text-[9px] mt-2 text-right">TWh — *proyeksi, Pew Research 2025</div>
                   </div>
                 </div>
-                <div className="flex-1 border-t-2 border-stone-900 pt-6 flex flex-col">
-                  <div className="text-[#b45309] mb-4">
-                    <Thermometer className="w-10 h-10" />
+                <div className="flex-1 border-t-2 border-stone-900 pt-4 flex flex-col">
+                  <div className="text-[#b45309] mb-2">
+                    <Thermometer className="w-8 h-8" />
                   </div>
-                  <h3 className="text-3xl font-bold text-stone-900 tracking-tight mb-3 shrink-0">
+                  <h3 className="text-2xl font-bold text-stone-900 tracking-tight mb-2 shrink-0">
                     Sumber Energi Kotor
                   </h3>
-                  <p className="text-stone-600 text-lg font-light leading-relaxed mb-4">
+                  <p className="text-stone-600 text-base font-light leading-relaxed mb-3">
                     40%+ dari gas alam, ~15% batu bara. Hanya 24% energi terbarukan. AI workloads memperburuk kebutuhan ini secara eksponensial.
                   </p>
                   <div className="flex-1 bg-white border border-stone-300 p-4 flex flex-col justify-center gap-2.5">
