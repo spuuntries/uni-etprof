@@ -192,15 +192,15 @@ export default function App() {
                       183 TWh per Tahun <sup className="text-[9px] text-[#dc2626] font-mono">[1]</sup>
                     </h3>
                     <p className="text-stone-600 text-sm font-light leading-relaxed mb-3">
-                      Pada 2024, data center AS mengonsumsi 183 TWh listrik, lebih dari 4% total nasional.<sup className="text-[8px] text-[#dc2626] font-mono">[4]</sup> Diproyeksikan hingga 580 TWh pada 2030.
+                      Pada 2024, data center AS mengonsumsi 183 TWh listrik, lebih dari 4% total nasional.<sup className="text-[8px] text-[#dc2626] font-mono">[4]</sup> Diproyeksikan hingga ~426 TWh pada 2030.<sup className="text-[8px] text-[#dc2626] font-mono">[1]</sup>
                     </p>
                     <div className="flex-1 bg-stone-900 p-4 flex flex-col justify-end rounded">
                       <div className="flex items-end gap-4" style={{ height: 100 }}>
                         {[
-                          { year: '2020', h: 17, projected: false, label: '~100' },
-                          { year: '2024', h: 32, projected: false, label: '183' },
-                          { year: '2028*', h: 66, projected: true, label: '~380' },
-                          { year: '2030*', h: 100, projected: true, label: '~580' },
+                          { year: '2020', h: 23, projected: false, label: '~100' },
+                          { year: '2024', h: 43, projected: false, label: '183' },
+                          { year: '2026*', h: 59, projected: true, label: '~250' },
+                          { year: '2030*', h: 100, projected: true, label: '~426' },
                         ].map((bar) => (
                           <div key={bar.year} className="flex-1 flex flex-col items-center justify-end h-full">
                             <span className="text-stone-300 font-mono text-[10px] mb-1.5">{bar.label}</span>
@@ -212,11 +212,11 @@ export default function App() {
                         ))}
                       </div>
                       <div className="flex gap-4 mt-2">
-                        {['2020', '2024', '2028*', '2030*'].map((y) => (
+                        {['2020', '2024', '2026*', '2030*'].map((y) => (
                           <span key={y} className="flex-1 text-center text-stone-400 font-mono text-[10px]">{y}</span>
                         ))}
                       </div>
-                      <div className="text-stone-500 font-mono text-[9px] mt-2 text-right">TWh — *proyeksi, Pew Research 2025</div>
+                      <div className="text-stone-500 font-mono text-[9px] mt-2 text-right">TWh — *proyeksi, IEA/LBNL via Pew 2025</div>
                     </div>
                   </div>
                   <div className="flex-1 border-t-2 border-stone-900 pt-4 flex flex-col">
@@ -230,7 +230,7 @@ export default function App() {
                       {[
                         { label: 'Gas Alam', pct: '40%+', width: '42%', color: 'bg-[#dc2626]' },
                         { label: 'Terbarukan', pct: '24%', width: '24%', color: 'bg-emerald-500' },
-                        { label: 'Nuklir', pct: '~20%', width: '20%', color: 'bg-blue-500' },
+                        { label: 'Nuklir', pct: '~18%', width: '18%', color: 'bg-blue-500' },
                         { label: 'Batu Bara', pct: '~15%', width: '15%', color: 'bg-stone-700' },
                       ].map((item) => (
                         <div key={item.label}>
@@ -322,9 +322,9 @@ export default function App() {
               <div className="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/40 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5 space-y-2.5">
                 <div>
-                  <div className="text-2xl font-black text-white mb-0.5">70%+</div>
-                  <div className="text-[10px] font-mono text-stone-300 uppercase tracking-widest leading-none mb-1">Konsentrasi Virginia</div>
-                  <p className="text-[10px] text-stone-300/80 leading-snug">Data Center Alley membebani grid listrik dan air lokal.<sup className="text-[7px] text-stone-400 font-mono">[8]</sup></p>
+                  <div className="text-2xl font-black text-white mb-0.5">70%</div>
+                  <div className="text-[10px] font-mono text-stone-300 uppercase tracking-widest leading-none mb-1">Trafik Internet Global</div>
+                  <p className="text-[10px] text-stone-300/80 leading-snug">Lalu lintas internet dunia melewati Data Center Alley, Virginia.<sup className="text-[7px] text-stone-400 font-mono">[8]</sup></p>
                 </div>
                 <div className="h-px bg-white/20" />
                 <div>
@@ -334,15 +334,15 @@ export default function App() {
                 </div>
                 <div className="h-px bg-white/20" />
                 <div>
-                  <div className="text-xl font-black text-amber-400 mb-0.5">60–90 dB</div>
+                  <div className="text-xl font-black text-amber-400 mb-0.5">75–90+ dB</div>
                   <div className="text-[10px] font-mono text-stone-300 uppercase tracking-widest leading-none mb-1">Polusi Suara</div>
-                  <p className="text-[10px] text-stone-300/80 leading-snug">Pendingin & generator berjalan 24/7, mengganggu warga sekitar.<sup className="text-[7px] text-stone-400 font-mono">[9]</sup></p>
+                  <p className="text-[10px] text-stone-300/80 leading-snug">Pendingin & generator berjalan 24/7, mengganggu warga sekitar.<sup className="text-[7px] text-stone-400 font-mono">[11]</sup></p>
                 </div>
                 <div className="h-px bg-white/20" />
                 <div>
-                  <div className="text-lg font-black text-amber-300 mb-0.5">Moratorium</div>
+                  <div className="text-lg font-black text-amber-300 mb-0.5">Resistensi</div>
                   <div className="text-[10px] font-mono text-stone-300 uppercase tracking-widest leading-none mb-1">Penolakan Warga</div>
-                  <p className="text-[10px] text-stone-300/80 leading-snug">Virginia & Texas melarang pembangunan baru.<sup className="text-[7px] text-stone-400 font-mono">[5]</sup></p>
+                  <p className="text-[10px] text-stone-300/80 leading-snug">Moratorium lokal di berbagai daerah; Maine berlakukan larangan negara bagian.<sup className="text-[7px] text-stone-400 font-mono">[5]</sup></p>
                 </div>
               </div>
             </div>
@@ -366,25 +366,25 @@ export default function App() {
                 </h3>
                 <div className="bg-white p-5 border-l-4 border-[#dc2626] rounded-r">
                   <p className="text-stone-600 italic text-base mb-3">
-                    "Data centers are consuming so much power that there isn't enough left for the residents who were here first. Our electricity bills keep climbing."
+                    "The noise is just intolerable. Almost everybody in the neighborhood now has decibel readers on their phones. We hear it all the time inside our homes."
                   </p>
                   <div className="text-xs font-mono text-stone-400 uppercase tracking-widest">
-                    — Warga Loudoun County, Virginia (CBS News, 2025)
+                    — Gregory Pirio, Loudoun County, Virginia (WUSA9, 2026)
                   </div>
                 </div>
 
                 <div className="bg-white p-5 border-l-4 border-[#b45309] rounded-r">
                   <p className="text-stone-600 italic text-base mb-3">
-                    "The noise, the construction, the strain on our water supply — we didn't sign up for this. These facilities benefit tech companies, not us."
+                    "We don't live out here to live near anything industrial, and I knew it was going to affect the health of my kids. I am just beside myself."
                   </p>
                   <div className="text-xs font-mono text-stone-400 uppercase tracking-widest">
-                    — Komunitas di Texas (Project Censored, 2025)
+                    — Joanne Carcamo, Hood County, Texas (CBS News, 2025)
                   </div>
                 </div>
 
                 <div className="bg-stone-900 p-5 mt-auto flex items-center justify-between rounded">
-                  <span className="text-lg font-medium text-white">Stabilitas Grid Terancam</span>
-                  <span className="text-2xl font-black text-red-400">Kritis</span>
+                  <span className="text-lg font-medium text-white">Praktik Ini Harus Berubah</span>
+                  <span className="text-2xl font-black text-red-400">Penting</span>
                 </div>
               </div>
             </div>
@@ -473,19 +473,21 @@ export default function App() {
             </div>
 
             <div className="flex-1 overflow-hidden">
-              <div className="grid grid-cols-3 gap-3 h-full">
+              <div className="grid grid-cols-3 gap-2.5 h-full">
                 {[
-                  { num: "1", title: "Pew Research Center (2025)", desc: "Data centers now consume more than 4% of U.S. electricity.", url: "pewresearch.org" },
-                  { num: "2", title: "U.S. Dept. of Energy (2024)", desc: "Report on data center onsite water use projections 2023–2028.", url: "energy.gov" },
+                  { num: "1", title: "Pew Research Center (2025)", desc: "Data centers now consume more than 4% of U.S. electricity; IEA projects ~426 TWh by 2030.", url: "pewresearch.org" },
+                  { num: "2", title: "U.S. Dept. of Energy / LBNL (2024)", desc: "Data center energy report: 325–580 TWh projected by 2028; water use 2–4× growth.", url: "energy.gov" },
                   { num: "3", title: "World Resources Institute (2024)", desc: "AI data centers could require 32B gallons of water/year by 2028.", url: "wri.org" },
                   { num: "4", title: "Harvard Belfer Center (2025)", desc: "U.S. electricity hit record high in 2024 driven by data centers.", url: "belfercenter.org" },
-                  { num: "5", title: "CBS News (2025)", desc: "Community opposition to data center expansion in Virginia.", url: "cbsnews.com" },
+                  { num: "5", title: "CBS News (2025)", desc: "Community opposition to data centers in Hood County, TX and Virginia.", url: "cbsnews.com" },
                   { num: "6", title: "Deloitte (2025)", desc: "Nuclear energy as strategic solution for 24/7 carbon-free DC power.", url: "deloitte.com" },
-                  { num: "7", title: "EESI", desc: "Environmental impact assessment of data center water and energy usage.", url: "eesi.org" },
+                  { num: "7", title: "EIA / EESI", desc: "U.S. grid mix 2024: gas 43%, renewables 24%, nuclear 18%, coal 15%.", url: "eia.gov / eesi.org" },
                   { num: "8", title: "Lincoln Institute of Land Policy", desc: "Resource competition between data centers and local communities.", url: "lincolninst.edu" },
-                  { num: "9", title: "Project Censored / EPA (2024)", desc: "Data center noise pollution: cooling systems produce 60–90 dB.", url: "projectcensored.org" },
+                  { num: "9", title: "WUSA9 (2026)", desc: "Loudoun County residents report intolerable noise from data center cooling.", url: "wusa9.com" },
+                  { num: "10", title: "Texas Tribune (2025)", desc: "Texas communities fight data center water use; strain on Ogallala Aquifer.", url: "texastribune.org" },
+                  { num: "11", title: "Data Center Knowledge", desc: "Data center noise levels: 75–90+ dBA from cooling systems and generators.", url: "datacenterknowledge.com" },
                 ].map((src) => (
-                  <div key={src.num} className="bg-stone-50 border border-stone-200 p-3.5 flex gap-3 items-start rounded">
+                  <div key={src.num} className="bg-stone-50 border border-stone-200 p-3 flex gap-2.5 items-start rounded">
                     <div className="text-[#dc2626] font-mono text-sm font-black shrink-0 w-7 text-right leading-snug pt-px">{src.num}.</div>
                     <div className="flex-1 min-w-0">
                       <div className="font-bold text-stone-900 text-sm leading-snug">{src.title}</div>
