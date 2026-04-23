@@ -124,7 +124,7 @@ export default function App() {
             <div className="shrink-0">
               <div className="w-full h-px bg-stone-300 mb-4 mt-8" />
               <div className="flex justify-between font-mono text-xs text-stone-500 uppercase tracking-widest leading-none">
-                <span>Etika Profesi — Kelompok</span>
+                <span>Etika Profesi — Kelompok 19 Belas Juta Hektar Lapangan Bergizi Gratis</span>
                 <span>2026</span>
               </div>
             </div>
@@ -139,10 +139,10 @@ export default function App() {
             </h2>
             <div className="grid grid-cols-2 max-w-4xl w-full gap-8">
               {[
-                { id: "XXXXXXXXXX", name: "Nama Anggota 1" },
-                { id: "XXXXXXXXXX", name: "Nama Anggota 2" },
-                { id: "XXXXXXXXXX", name: "Nama Anggota 3" },
-                { id: "XXXXXXXXXX", name: "Nama Anggota 4" },
+                { id: "5054231013", name: "Faiz Muhammad Kautsar" },
+                { id: "5054231011", name: "Muhammad Farhan Arya Wicaksono" },
+                { id: "5054231018", name: "Imam Muhammad Diponegoro" },
+                // { id: "XXXXXXXXXX", name: "Nama Anggota 4" },
               ].map((member) => (
                 <div key={member.id} className="border border-stone-700 bg-stone-800 p-8 flex flex-col items-center justify-center text-center relative overflow-hidden group hover:border-red-400 transition-all">
                   <div className="absolute top-0 left-0 w-full h-1 bg-[#dc2626] opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -183,7 +183,7 @@ export default function App() {
                     183 TWh per Tahun
                   </h3>
                   <p className="text-stone-600 text-base font-light leading-relaxed mb-3">
-                    Pada 2024, pusat data AS mengonsumsi 183 TWh listrik — lebih dari 4% total nasional. Diproyeksikan hingga 580 TWh pada 2030.
+                    Pada 2024, data center AS mengonsumsi 183 TWh listrik, lebih dari 4% total nasional. Diproyeksikan hingga 580 TWh pada 2030.
                   </p>
                   <div className="flex-1 bg-stone-900 p-4 flex flex-col justify-end">
                     <div className="flex items-end gap-6" style={{ height: 110 }}>
@@ -241,7 +241,7 @@ export default function App() {
                   Dampak Utama
                 </span>
                 <span className="text-2xl text-stone-800 font-medium leading-none">
-                  Rekor konsumsi listrik AS 2024 — data center penyebab utama.
+                  Rekor konsumsi listrik AS 2024: data center penyebab utama.
                 </span>
               </div>
             </div>
@@ -289,15 +289,15 @@ export default function App() {
                   Konsumsi Air Tidak Langsung
                 </h4>
                 <p className="text-stone-600 text-lg font-light leading-relaxed mb-4 flex-1 overflow-hidden">
-                  75–80% jejak air data center sebenarnya bersifat tidak langsung — tertanam dalam pembangkitan listrik. Pembangkit termoelektrik butuh air untuk menghasilkan energi yang dipakai data center.
+                  75–80% jejak air data center sebenarnya bersifat tidak langsung, tetapi dalam dalam pembangkitan listriknya. Pembangkit termoelektrik butuh air untuk menghasilkan energi yang dipakai data center.
                 </p>
-                <div className="mt-auto font-mono text-xs text-[#0369a1] bg-blue-50 p-3 shrink-0 leading-relaxed">
+                <div className="mt-auto font-mono text-xs text-[#0369a1] bg-blue-100 p-3 shrink-0 leading-relaxed">
                   Jejak air tersembunyi yang sering diabaikan.
                 </div>
               </div>
 
-              <div className="flex-1 border border-[#dc2626] p-6 flex flex-col bg-[#dc2626] text-stone-100">
-                <div className="text-red-200 font-mono text-xl mb-6 border-b border-red-400 pb-3 shrink-0">
+              <div className="flex-1 border border-red-800 p-6 flex flex-col bg-red-800 text-stone-100">
+                <div className="text-red-200 font-mono text-xl mb-6 border-b border-red-700 pb-3 shrink-0">
                   03.
                 </div>
                 <AlertTriangle className="w-10 h-10 text-red-200 mb-4 shrink-0" />
@@ -307,7 +307,7 @@ export default function App() {
                 <p className="text-red-100 text-lg font-light leading-relaxed mb-4 flex-1 overflow-hidden">
                   AI workloads membutuhkan densitas daya jauh lebih tinggi per rak. Estimasi: data center AI di AS bisa memerlukan hingga 32 miliar galon air per tahun pada 2028.
                 </p>
-                <div className="mt-auto font-mono text-xs text-[#dc2626] bg-red-100 p-3 shrink-0 leading-relaxed">
+                <div className="mt-auto font-mono text-xs text-red-900 bg-red-100 p-3 shrink-0 leading-relaxed">
                   Sumber: World Resources Institute (WRI), 2024
                 </div>
               </div>
@@ -437,7 +437,7 @@ export default function App() {
                 <p className="text-stone-600 text-lg font-light leading-relaxed mb-4 flex-1 overflow-hidden">
                   Beralih dari pendinginan evaporatif ke direct-to-chip cooling dan immersion cooling untuk mengurangi konsumsi air secara drastis, terutama untuk rak AI berdensitas tinggi.
                 </p>
-                <div className="mt-auto font-mono text-xs text-emerald-700 bg-emerald-50 p-3 shrink-0 leading-relaxed">
+                <div className="mt-auto font-mono text-xs text-emerald-700 bg-emerald-100 p-3 shrink-0 leading-relaxed">
                   Hemat air hingga 90% dibanding evaporatif.
                 </div>
               </div>
