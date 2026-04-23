@@ -145,7 +145,7 @@ export default function App() {
                 { id: "5054231013", name: "Faiz Muhammad Kautsar" },
                 { id: "5054231011", name: "Muhammad Farhan Arya Wicaksono" },
                 { id: "5054231018", name: "Imam Muhammad Diponegoro" },
-                // { id: "XXXXXXXXXX", name: "Nama Anggota 4" },
+                { id: "5054231010", name: "Muhammad Rasyad Lubis" },
               ].map((member) => (
                 <div key={member.id} className="border border-stone-700 bg-stone-800 p-8 flex flex-col items-center justify-center text-center relative overflow-hidden group hover:border-red-400 transition-all">
                   <div className="absolute top-0 left-0 w-full h-1 bg-[#dc2626] opacity-0 group-hover:opacity-100 transition-opacity"></div>
