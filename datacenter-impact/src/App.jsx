@@ -279,9 +279,10 @@ export default function App() {
                 <div className="text-[#0369a1] font-mono text-lg mb-4 border-b border-stone-200 pb-2 shrink-0">01.</div>
                 <Droplets className="w-8 h-8 text-[#0369a1] mb-3 shrink-0" />
                 <h4 className="font-bold text-xl text-stone-900 tracking-tight mb-2 shrink-0">Pendinginan Langsung</h4>
-                <p className="text-stone-600 text-sm font-light leading-relaxed mb-3 flex-1 overflow-hidden">
+                <p className="text-stone-600 text-sm font-light leading-relaxed mb-1.5 flex-1 overflow-hidden">
                   Server menghasilkan panas luar biasa. Sistem pendinginan evaporatif menyedot jutaan liter air bersih setiap hari. Konsumsi air langsung diproyeksikan naik 2–4× antara 2023–2028.<sup className="text-[8px] text-[#0369a1] font-mono">[2]</sup>
                 </p>
+                <img src="/images/thumb-evaporative.png" alt="Evaporative cooling system" className="w-full h-[96px] object-cover rounded mb-3 shrink-0 opacity-90" />
                 <div className="mt-auto font-mono text-[10px] text-stone-400 bg-stone-100 p-2.5 shrink-0 leading-relaxed rounded">
                   Sumber: U.S. Department of Energy, 2024
                 </div>
@@ -291,9 +292,10 @@ export default function App() {
                 <div className="text-[#0369a1] font-mono text-lg mb-4 border-b border-blue-200 pb-2 shrink-0">02.</div>
                 <Zap className="w-8 h-8 text-[#0369a1] mb-3 shrink-0" />
                 <h4 className="font-bold text-xl text-stone-900 tracking-tight mb-2 shrink-0">Konsumsi Air Tidak Langsung</h4>
-                <p className="text-stone-600 text-sm font-light leading-relaxed mb-3 flex-1 overflow-hidden">
+                <p className="text-stone-600 text-sm font-light leading-relaxed mb-1.5 flex-1 overflow-hidden">
                   75–80% jejak air data center bersifat tidak langsung, tetapi dalam pembangkitan listriknya.<sup className="text-[8px] text-[#0369a1] font-mono">[7]</sup> Pembangkit termoelektrik butuh air untuk menghasilkan energi yang dipakai data center.
                 </p>
+                <img src="/images/thumb-powerplant.png" alt="Thermoelectric power plant" className="w-full h-[96px] object-cover rounded mb-3 shrink-0 opacity-90" />
                 <div className="mt-auto font-mono text-[10px] text-[#0369a1] bg-blue-100 p-2.5 shrink-0 leading-relaxed rounded">
                   Jejak air tersembunyi yang sering diabaikan.
                 </div>
@@ -303,9 +305,10 @@ export default function App() {
                 <div className="text-red-200 font-mono text-lg mb-4 border-b border-red-700 pb-2 shrink-0">03.</div>
                 <AlertTriangle className="w-8 h-8 text-red-200 mb-3 shrink-0" />
                 <h4 className="font-bold text-xl text-white tracking-tight mb-2 shrink-0">AI Memperburuk Semua</h4>
-                <p className="text-red-100 text-sm font-light leading-relaxed mb-3 flex-1 overflow-hidden">
+                <p className="text-red-100 text-sm font-light leading-relaxed mb-1.5 flex-1 overflow-hidden">
                   AI workloads membutuhkan densitas daya jauh lebih tinggi per rak. Estimasi: data center AI di AS bisa memerlukan hingga 32 miliar galon air per tahun pada 2028.<sup className="text-[8px] text-red-200 font-mono">[3]</sup>
                 </p>
+                <img src="/images/thumb-ai-servers.png" alt="AI GPU server racks" className="w-full h-[96px] object-cover rounded mb-3 shrink-0 opacity-80" />
                 <div className="mt-auto font-mono text-[10px] text-red-900 bg-red-100 p-2.5 shrink-0 leading-relaxed rounded">
                   Sumber: World Resources Institute (WRI), 2024
                 </div>
@@ -417,9 +420,10 @@ export default function App() {
                 <h4 className="font-bold text-xl text-stone-900 tracking-tight mb-2 shrink-0">
                   Energi Terbarukan & Nuklir
                 </h4>
-                <p className="text-stone-600 text-sm font-light leading-relaxed mb-3 flex-1 overflow-hidden">
+                <p className="text-stone-600 text-sm font-light leading-relaxed mb-1.5 flex-1 overflow-hidden">
                   Transisi ke 100% energi bersih melalui Power Purchase Agreements (PPAs) dengan solar, angin, dan Small Modular Reactors (SMR) nuklir untuk baseload 24/7.<sup className="text-[8px] text-emerald-600 font-mono">[6]</sup>
                 </p>
+                <img src="/images/thumb-renewable.png" alt="Solar panels and wind turbines" className="w-full h-[96px] object-cover rounded mb-3 shrink-0 opacity-90" />
                 <div className="mt-auto font-mono text-[10px] text-stone-400 bg-stone-100 p-2.5 shrink-0 leading-relaxed rounded">
                   Target: 24/7 carbon-free energy matching.
                 </div>
@@ -431,9 +435,10 @@ export default function App() {
                 <h4 className="font-bold text-xl text-stone-900 tracking-tight mb-2 shrink-0">
                   Liquid & Immersion Cooling
                 </h4>
-                <p className="text-stone-600 text-sm font-light leading-relaxed mb-3 flex-1 overflow-hidden">
+                <p className="text-stone-600 text-sm font-light leading-relaxed mb-1.5 flex-1 overflow-hidden">
                   Beralih dari pendinginan evaporatif ke direct-to-chip cooling dan immersion cooling untuk mengurangi konsumsi air secara drastis, terutama untuk rak AI berdensitas tinggi.<sup className="text-[8px] text-emerald-600 font-mono">[2]</sup>
                 </p>
+                <img src="/images/thumb-cooling.png" alt="Immersion cooling tanks" className="w-full h-[96px] object-cover rounded mb-3 shrink-0 opacity-90" />
                 <div className="mt-auto font-mono text-[10px] text-emerald-700 bg-emerald-100 p-2.5 shrink-0 leading-relaxed rounded">
                   Hemat air hingga 90% dibanding evaporatif.
                 </div>
@@ -445,9 +450,10 @@ export default function App() {
                 <h4 className="font-bold text-xl text-white tracking-tight mb-2 shrink-0">
                   Regulasi & Transparansi
                 </h4>
-                <p className="text-emerald-100 text-sm font-light leading-relaxed mb-3 flex-1 overflow-hidden">
+                <p className="text-emerald-100 text-sm font-light leading-relaxed mb-1.5 flex-1 overflow-hidden">
                   Pemerintah perlu mewajibkan pelaporan konsumsi energi dan air, menetapkan standar efisiensi, serta melibatkan komunitas lokal dalam proses perizinan pembangunan data center.<sup className="text-[8px] text-emerald-200 font-mono">[7]</sup>
                 </p>
+                <img src="/images/thumb-regulation.png" alt="Policy documents" className="w-full h-[96px] object-cover rounded mb-3 shrink-0 opacity-80" />
                 <div className="mt-auto font-mono text-[10px] text-emerald-800 bg-emerald-100 p-2.5 shrink-0 leading-relaxed rounded">
                   Waste heat recovery untuk pemanasan komunitas sekitar.
                 </div>
