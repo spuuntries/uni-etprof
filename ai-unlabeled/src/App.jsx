@@ -250,8 +250,9 @@ function PosterContent() {
       <div className="relative z-10 mt-auto px-10 pb-3 pt-2 shrink-0">
         <div className="flex justify-between items-end">
           <div className="flex gap-4">
-            {[['[1] Ahrefs (2025)','[2] Conjointly / NIH (2025)','[3] OJK / IASC (2025)','[4] MAFINDO (2026)'],
-              ['[5] Straits Times (2025)','[6] Kumparan (2025)','[7] ISEAS (2024)','[8] BPHN (2025)']
+            {[['[1] Ahrefs (2025)','[2] Conjointly / NIH (2025)','[3] OJK (2025)','[4] SAFEnet (2025)'],
+              ['[5] Komnas Perempuan (2025)','[6] MAFINDO (2026)','[7] Straits Times (2025)'],
+              ['[8] Kumparan (2025)','[9] ISEAS (2024)','[10] BPHN (2025)']
             ].map((col, ci) => (
               <div key={ci} className="space-y-[1px]">
                 {col.map((s, i) => <div key={i} className="text-[8px]" style={{ color: C.c15, fontFamily: mono }}>{s}</div>)}
