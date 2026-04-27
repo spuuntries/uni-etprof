@@ -56,6 +56,11 @@ function PosterContent() {
         <img src="/images/hero-ai-face.png" alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'grayscale(30%) contrast(1.1)' }} />
         <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${C.bg} 0%, ${C.bg}ee 20%, ${C.bg}77 50%, transparent)` }} />
         <div className="absolute inset-0" style={{ background: `linear-gradient(to right, ${C.bg}bb 0%, transparent 55%)` }} />
+        <div className="absolute top-0 right-0 w-[400px] h-[200px] z-10 pointer-events-none" style={{ background: 'radial-gradient(circle at top right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 70%)' }} />
+        <div className="absolute top-4 right-10 z-20 flex items-center gap-6">
+          <img src="/images/Logo ITS-Putih.png" alt="Logo ITS" className="h-[60px] object-contain" />
+          <img src="/images/IF-2.gif" alt="Logo Informatika" className="h-[45px] object-contain" />
+        </div>
         <div className="absolute bottom-0 left-0 right-0 px-10 pb-5 z-10 flex justify-between items-end">
           <div>
             <span className="text-[14px] font-bold tracking-[0.3em] uppercase block mb-2" style={{ fontFamily: mono, color: C.accent }}>Etika Profesi · Kelompok 4 · 2026</span>
