@@ -57,7 +57,7 @@ function PosterContent() {
         <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${C.bg} 0%, ${C.bg}ee 20%, ${C.bg}77 50%, transparent)` }} />
         <div className="absolute inset-0" style={{ background: `linear-gradient(to right, ${C.bg}bb 0%, transparent 55%)` }} />
         <div className="absolute bottom-0 left-0 right-0 px-10 pb-5 z-10">
-          <span className="text-[11px] font-bold tracking-[0.3em] uppercase block mb-2" style={{ fontFamily: mono, color: C.accent }}>Etika Profesi · Kelompok 4 · 2026</span>
+          <span className="text-[14px] font-bold tracking-[0.3em] uppercase block mb-2" style={{ fontFamily: mono, color: C.accent }}>Etika Profesi · Kelompok 4 · 2026</span>
           <h1 className="text-[4.2rem] leading-[0.82] tracking-[-0.03em] mb-2" style={{ fontFamily: serif, color: C.cream }}>
             Konten AI<br /><span style={{ color: C.accent }}>Tanpa Label.</span>
           </h1>
@@ -250,18 +250,19 @@ function PosterContent() {
       <div className="relative z-10 mt-auto px-10 pb-3 pt-2 shrink-0">
         <div className="flex justify-between items-end">
           <div className="flex gap-4">
-            {[['[1] Ahrefs (2025)','[2] Conjointly / NIH (2025)','[3] OJK (2025)','[4] SAFEnet (2025)'],
-              ['[5] Komnas Perempuan (2025)','[6] MAFINDO (2026)','[7] Straits Times (2025)'],
-              ['[8] Kumparan (2025)','[9] ISEAS (2024)','[10] BPHN (2025)']
+            {[['[1] Ahrefs (2025)','[2] Conjointly / NIH (2025)','[3] OJK (2025)'],
+              ['[4] SAFEnet (2025)', '[5] Komnas Perempuan (2025)','[6] MAFINDO (2026)'],
+              ['[7] Straits Times (2025)', '[8] Kumparan (2025)','[9] ISEAS (2024)'],
+              ['[10] BPHN (2025)']
             ].map((col, ci) => (
               <div key={ci} className="space-y-[1px]">
-                {col.map((s, i) => <div key={i} className="text-[8px]" style={{ color: C.c15, fontFamily: mono }}>{s}</div>)}
+                {col.map((s, i) => <div key={i} className="text-[10px]" style={{ color: C.c15, fontFamily: mono }}>{s}</div>)}
               </div>
             ))}
           </div>
           <div className="text-right">
-            <span className="text-[14px] font-black" style={{ fontFamily: serif, color: C.c25 }}>etika profesi.</span>
-            <span className="text-[8px] block tracking-[0.15em] uppercase mt-0.5" style={{ fontFamily: mono, color: C.c15 }}>Kelompok 4 · 2026</span>
+            <span className="text-[18px] font-black" style={{ fontFamily: serif, color: C.c25 }}>etika profesi.</span>
+            <span className="text-[12px] block tracking-[0.15em] uppercase mt-0.5" style={{ fontFamily: mono, color: C.c15 }}>Kelompok 4 · 2026</span>
           </div>
         </div>
       </div>
