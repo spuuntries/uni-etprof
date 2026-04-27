@@ -58,7 +58,7 @@ function PosterContent() {
         <div className="absolute inset-0" style={{ background: `linear-gradient(to right, ${C.bg}bb 0%, transparent 55%)` }} />
         <div className="absolute bottom-0 left-0 right-0 px-10 pb-5 z-10">
           <span className="text-[14px] font-bold tracking-[0.3em] uppercase block mb-2" style={{ fontFamily: mono, color: C.accent }}>Etika Profesi · Kelompok 4 · 2026</span>
-          <h1 className="text-[4.2rem] leading-[0.82] tracking-[-0.03em] mb-2" style={{ fontFamily: serif, color: C.cream }}>
+          <h1 className="text-[4.2rem] leading-[0.82] tracking-[-0.03em] mb-2 whitespace-nowrap" style={{ fontFamily: serif, color: C.cream }}>
             Konten AI<br /><span style={{ color: C.accent }}>Tanpa Label.</span>
           </h1>
           <p className="text-[16px] font-light leading-snug max-w-[420px]" style={{ color: C.c40 }}>
@@ -97,7 +97,7 @@ function PosterContent() {
               </div>
               <div>
                 <div className="text-[4rem] font-black leading-none" style={{ fontFamily: serif, color: C.cream }}>~50<span className="text-[1.4rem]" style={{ color: C.c40 }}>%</span></div>
-                <p className="text-[16px] font-light mt-0.5" style={{ color: C.c40 }}>Setara <span className="font-semibold" style={{ color: C.accent }}>lempar koin</span>.</p>
+                <p className="text-[16px] font-light mt-0.5 whitespace-nowrap" style={{ color: C.c40 }}>Setara <span className="font-semibold" style={{ color: C.accent }}>lempar koin</span>.</p>
                 <span className="text-[10px]" style={{ color: C.c25, fontFamily: mono }}>Conjointly / NIH, 2025</span>
               </div>
             </div>
@@ -240,7 +240,7 @@ function PosterContent() {
             <div key={i} className="flex-1 flex flex-col items-center text-center py-2.5 px-2 rounded" style={{ background: C.c06 }}>
               <div className="w-[34px] h-[34px] rounded-lg flex items-center justify-center mb-1" style={{ background: item.color + '22', color: item.color }}>{item.icon}</div>
               <h4 className="text-[15px] font-bold" style={{ color: C.cream }}>{item.title}</h4>
-              <p className="text-[12px] font-light mt-0.5" style={{ color: C.c40 }}>{item.desc}</p>
+              <p className="text-[12px] font-light mt-0.5 whitespace-nowrap" style={{ color: C.c40 }}>{item.desc}</p>
             </div>
           ))}
         </div>
@@ -288,7 +288,7 @@ export default function App() {
   return (
     <div className="flex flex-col h-screen w-full overflow-hidden" style={{ background: '#050505', fontFamily: sans }}>
       {isExporting && <div className="fixed inset-0 z-[9999] flex items-center justify-center gap-3" style={{ background: '#050505' }}><Loader2 className="w-5 h-5 animate-spin" style={{ color: C.accent }} /><span className="text-sm uppercase tracking-widest" style={{ color: C.accent, fontFamily: mono }}>Mengekspor…</span></div>}
-      <div className="fixed top-0 left-0 z-[-1] opacity-0 pointer-events-none" style={{ width: W }}><div ref={posterRef}><PosterContent /></div></div>
+      <div className="fixed pointer-events-none" style={{ width: W, left: '-9999px', top: 0 }}><div ref={posterRef}><PosterContent /></div></div>
       <div ref={containerRef} className="flex-1 overflow-hidden relative flex items-center justify-center">
         <div className="shadow-2xl shadow-black/60 overflow-hidden shrink-0" style={{ width: W, height: H, transform: `scale(${scale})`, transformOrigin: 'center center' }}><PosterContent /></div>
       </div>
