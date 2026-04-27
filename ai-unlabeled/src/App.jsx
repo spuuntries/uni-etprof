@@ -124,37 +124,49 @@ function PosterContent() {
         </div>
       </div>
 
-      {/* 02: ORANGE — Rp7.8T | 343rb | ↑1550% fraud | ↑40.8% KBGO */}
+      {/* 02: ORANGE — Dampak di Indonesia & Global */}
       <div className="relative z-10 shrink-0 px-10 py-4" style={{ background: C.accent }}>
         <div className="flex gap-2.5 items-center mb-2">
           <SN n="2" dark />
-          <h2 className="text-[1.5rem] font-bold" style={{ fontFamily: serif }}>Dampak di Indonesia</h2>
-          <span className="ml-auto text-[16px] uppercase" style={{ color: 'rgba(255,255,255,0.3)', fontFamily: mono }}>OJK / SAFEnet / Komnas, 2025</span>
+          <h2 className="text-[1.5rem] font-bold" style={{ fontFamily: serif }}>Dampak Indonesia & Global</h2>
+          <span className="ml-auto text-[15px] uppercase whitespace-nowrap" style={{ color: 'rgba(255,255,255,0.3)', fontFamily: mono }}>OJK / SAFEnet / Surfshark / EngageMedia</span>
         </div>
-        <div className="flex items-end gap-5">
-          <div>
-            <div className="text-[2.8rem] font-black leading-none" style={{ fontFamily: serif }}>Rp7,8T</div>
-            <span className="text-[16px]" style={{ color: 'rgba(255,255,255,0.7)' }}>Kerugian</span>
-          </div>
-          <div className="w-[1.5px] h-[34px]" style={{ background: 'rgba(255,255,255,0.2)' }} />
-          <div>
-            <div className="text-[2rem] font-black leading-none" style={{ fontFamily: serif }}>343rb</div>
-            <span className="text-[16px]" style={{ color: 'rgba(255,255,255,0.7)' }}>Laporan</span>
-          </div>
-          <div className="w-[1.5px] h-[34px]" style={{ background: 'rgba(255,255,255,0.2)' }} />
-          <div className="flex items-end gap-1.5">
-            <MiniBar a={6} b={90} labelA="'23" labelB="'24" />
+        <div className="flex items-end justify-between">
+          <div className="flex items-end gap-4">
             <div>
-              <div className="text-[2rem] font-black leading-none" style={{ fontFamily: serif }}>↑1.550%</div>
-              <span className="text-[16px]" style={{ color: 'rgba(255,255,255,0.6)' }}>Penipuan AI</span>
+              <div className="text-[2.8rem] font-black leading-none" style={{ fontFamily: serif }}>Rp7,8T</div>
+              <span className="text-[16px]" style={{ color: 'rgba(255,255,255,0.7)' }}>Kerugian ID</span>
+            </div>
+            <div className="w-[1.5px] h-[34px] mb-1" style={{ background: 'rgba(255,255,255,0.2)' }} />
+            <div>
+              <div className="text-[2.8rem] font-black leading-none" style={{ fontFamily: serif }}>343rb</div>
+              <span className="text-[16px]" style={{ color: 'rgba(255,255,255,0.7)' }}>Laporan ID</span>
             </div>
           </div>
-          <div className="w-[1.5px] h-[34px]" style={{ background: 'rgba(255,255,255,0.2)' }} />
-          <div className="flex items-end gap-1.5">
-            <MiniBar a={60} b={85} labelA="'24" labelB="'25" />
-            <div>
-              <div className="text-[2rem] font-black leading-none" style={{ fontFamily: serif }}>↑40,8%</div>
-              <span className="text-[16px]" style={{ color: 'rgba(255,255,255,0.6)' }}>KBGO</span>
+          
+          <div className="flex items-end gap-3">
+            <div className="flex items-end gap-1.5">
+              <MiniBar a={6} b={90} labelA="'23" labelB="'24" />
+              <div>
+                <div className="text-[2rem] font-black leading-none" style={{ fontFamily: serif }}>↑1.550%</div>
+                <span className="text-[14px]" style={{ color: 'rgba(255,255,255,0.6)' }}>Penipuan AI</span>
+              </div>
+            </div>
+            <div className="w-[1.5px] h-[34px] mb-1" style={{ background: 'rgba(255,255,255,0.2)' }} />
+            <div className="flex items-end gap-1.5">
+              <MiniBar a={28} b={100} labelA="'24" labelB="'25" />
+              <div>
+                <div className="text-[2rem] font-black leading-none" style={{ fontFamily: serif }}>↑257%</div>
+                <span className="text-[14px]" style={{ color: 'rgba(255,255,255,0.6)' }}>Insiden Global</span>
+              </div>
+            </div>
+            <div className="w-[1.5px] h-[34px] mb-1" style={{ background: 'rgba(255,255,255,0.2)' }} />
+            <div className="flex items-end gap-1.5">
+              <MiniBar a={26} b={100} labelA="'23" labelB="'24" />
+              <div>
+                <div className="text-[2rem] font-black leading-none" style={{ fontFamily: serif }}>↑283%</div>
+                <span className="text-[14px]" style={{ color: 'rgba(255,255,255,0.6)' }}>Kasus KBGO</span>
+              </div>
             </div>
           </div>
         </div>
@@ -269,9 +281,9 @@ function PosterContent() {
         <div className="flex justify-between items-end">
           <div className="flex gap-4">
             {[['[1] Ahrefs (2025)','[2] Conjointly / NIH (2025)','[3] OJK (2025)'],
-              ['[4] SAFEnet (2025)', '[5] Komnas Perempuan (2025)','[6] MAFINDO (2026)'],
+              ['[4] SAFEnet (2025)', '[5] EngageMedia (2024)','[6] MAFINDO (2026)'],
               ['[7] Straits Times (2025)', '[8] Kumparan (2025)','[9] ISEAS (2024)'],
-              ['[10] BPHN (2025)']
+              ['[10] BPHN (2025)', '[11] Surfshark (2025)']
             ].map((col, ci) => (
               <div key={ci} className="space-y-[1px]">
                 {col.map((s, i) => <div key={i} className="text-[10px]" style={{ color: C.c15, fontFamily: mono }}>{s}</div>)}
