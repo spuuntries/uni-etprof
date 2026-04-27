@@ -56,14 +56,32 @@ function PosterContent() {
         <img src="/images/hero-ai-face.png" alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter: 'grayscale(30%) contrast(1.1)' }} />
         <div className="absolute inset-0" style={{ background: `linear-gradient(to top, ${C.bg} 0%, ${C.bg}ee 20%, ${C.bg}77 50%, transparent)` }} />
         <div className="absolute inset-0" style={{ background: `linear-gradient(to right, ${C.bg}bb 0%, transparent 55%)` }} />
-        <div className="absolute bottom-0 left-0 right-0 px-10 pb-5 z-10">
-          <span className="text-[14px] font-bold tracking-[0.3em] uppercase block mb-2" style={{ fontFamily: mono, color: C.accent }}>Etika Profesi · Kelompok 4 · 2026</span>
-          <h1 className="text-[4.2rem] leading-[0.82] tracking-[-0.03em] mb-2 whitespace-nowrap" style={{ fontFamily: serif, color: C.cream }}>
-            Konten AI<br /><span style={{ color: C.accent }}>Tanpa Label.</span>
-          </h1>
-          <p className="text-[16px] font-light leading-snug max-w-[420px]" style={{ color: C.c40 }}>
-            Konten buatan AI beredar <span style={{ color: C.accent }}>tanpa penanda</span>, publik tak bisa bedakan fakta dari fabrikasi.
-          </p>
+        <div className="absolute bottom-0 left-0 right-0 px-10 pb-5 z-10 flex justify-between items-end">
+          <div>
+            <span className="text-[14px] font-bold tracking-[0.3em] uppercase block mb-2" style={{ fontFamily: mono, color: C.accent }}>Etika Profesi · Kelompok 4 · 2026</span>
+            <h1 className="text-[4.2rem] leading-[0.82] tracking-[-0.03em] mb-2 whitespace-nowrap" style={{ fontFamily: serif, color: C.cream }}>
+              Konten AI<br /><span style={{ color: C.accent }}>Tanpa Label.</span>
+            </h1>
+            <p className="text-[16px] font-light leading-snug max-w-[420px]" style={{ color: C.c40 }}>
+              Konten buatan AI beredar <span style={{ color: C.accent }}>tanpa penanda</span>, publik tak bisa bedakan fakta dari fabrikasi.
+            </p>
+          </div>
+
+          <div className="text-right">
+            <span className="text-[10px] font-bold tracking-[0.2em] uppercase block mb-2" style={{ fontFamily: mono, color: C.c25 }}>Anggota Tim</span>
+            {[
+              { id: "5054231010", name: "Muhammad Rasyad Lubis" },
+              { id: "5054231011", name: "Muhammad Farhan Arya Wicaksono" },
+              { id: "5054231013", name: "Faiz Muhammad Kautsar" },
+              { id: "5054231018", name: "Imam Muhammad Diponegoro" },
+              { id: "5054231021", name: "Abdan Hafidz" },
+            ].map(m => (
+              <div key={m.id} className="flex justify-end items-center gap-3 mb-1 last:mb-0">
+                <span className="text-[13px] font-light whitespace-nowrap" style={{ color: C.cream }}>{m.name}</span>
+                <span className="text-[11px] tracking-wider shrink-0" style={{ fontFamily: mono, color: C.accent }}>{m.id}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
